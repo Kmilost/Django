@@ -81,17 +81,16 @@ WSGI_APPLICATION = 'lunesDjango.wsgi.application'
 #    }
 # }
 
+import cx_Oracle
+cx_Oracle.init_oracle_client(lib_dir=r"C:\Users\kmilo\OneDrive\Documentos\Oracle\instantclient_19_19")
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'localhost:1521/orcl',
-        'USER':
-        'PASSWORD':
-        'TEST': {
-            'USER':'default_test',
-            'TBLSPACE': 'defaul_test_tbls',
-            'TBLSPACE': 'defaul_test_tbls_tmp',
-        }
+        'NAME': 'v2sf5f8c3mf586t5_high',
+        'USER': 'PANADERIASF',
+        'PASSWORD': 'A2c9435207m_',
+        
     }
 }
 
